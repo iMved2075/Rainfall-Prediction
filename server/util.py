@@ -35,7 +35,7 @@ def load_saved_artifacts():
     global __cred
 
     firebase_admin.initialize_app(__cred, {
-        "databaseURL": "https://iot-2024-1277a-default-rtdb.asia-southeast1.firebasedatabase.app/"})
+        "databaseURL": ""}) #enter the url to access the firebase here
 
     __model = joblib.load("./artifacts/model_joblib")
     print("Loading saved artifacts...done")
