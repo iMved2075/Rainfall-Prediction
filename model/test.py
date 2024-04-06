@@ -4,7 +4,7 @@ from firebase_admin import db, credentials
 
 # authenticate to firebase
 cred = credentials.Certificate("credentials.json")
-firebase_admin.initialize_app(cred, {"databaseURL": "https://iot-2024-1277a-default-rtdb.asia-southeast1.firebasedatabase.app/"})
+firebase_admin.initialize_app(cred, {"databaseURL": ""}) #enter the url to access firebase here
 
 # creating reference to root node
 ref = db.reference("/")
